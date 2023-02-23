@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `feedback_staff` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `staff_id` varchar(50) NOT NULL,
+    ` Do you feel like you are treated with respect?` enum('5','4','3','2','1') NOT NULL,
+    `Do you feel valued?` enum('5','4','3','2','1') NOT NULL,
+  `Do you feel there is opportunity to grow?` enum('5','4','3','2','1') NOT NULL,
+  `Do you enjoy on your job?` enum('5','4','3','2','1') NOT NULL,
+  `How can I better support you in your work?` enum('5','4','3','2','1') NOT NULL,
+  `How likely is it that you would recommend this university to a friend?` enum('5','4','3','2','1') NOT NULL,
+  `How stisfied are you with the policies that this univesity sets?` enum('5','4','3','2','1') NOT NULL,
+  `How satisfied are you with the compensation package at this university?` enum('5','4','3','2','1') NOT NULL,
+  `How reasonable is the teaching requirement at this univesity?` enum('5','4','3','2','1') NOT NULL,
+  `How satisfied are you with the availability of resources for teaching at this university?` enum('5','4','3','2','1') NOT NULL,
+  `How well does this university recongnize faculty for their achievements?` enum('5','4','3','2','1') NOT NULL,
+  `How respectfully do members of your department treat each other?` enum('5','4','3','2','1') NOT NULL,
+  `How satisfied are you with your department leadership?` enum('5','4','3','2','1') NOT NULL,
+  `How satisfied are you with the opportunities for professional development at this university?` enum('5','4','3','2','1') NOT NULL,
+  `Do you have any other comments,questions,or concerns?` text NOT NULL,
+  `start_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
